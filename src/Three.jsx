@@ -4,6 +4,7 @@ import gsap from 'gsap'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { HDRLoader } from 'three/addons/loaders/HDRLoader.js'
 import { threeModels } from './models'
+import { createSceneComposer } from './createSceneComposer.js'
 
 import genericFrame from './static/models/GenericFrame.glb'
 import grainNoiseUrl from './static/textures/noise.jpeg'
@@ -39,7 +40,7 @@ export function Three() {
     const height = container.clientHeight || window.innerHeight
 
     const scene = new THREE.Scene()
-    scene.background = new THREE.Color(0x111827)
+
 
     const camera = new THREE.PerspectiveCamera(25, width / height, 0.1, 100)
     camera.position.set(0, 0, 9)
@@ -49,8 +50,17 @@ export function Three() {
     renderer.setSize(width, height)
     renderer.outputColorSpace = THREE.SRGBColorSpace
     renderer.toneMapping = THREE.ACESFilmicToneMapping
-    renderer.toneMappingExposure = 0.5
+    renderer.toneMappingExposure = 0.4
     container.appendChild(renderer.domElement)
+    // scene.background = new THREE.Color(0x111827)
+
+    const { composer, setSize: setComposerSize, dispose: disposeComposer } = createSceneComposer(
+      renderer,
+      scene,
+      camera,
+      width,
+      height,
+    )
 
     // Movement Group
     const modelGroup = new THREE.Group();
@@ -89,6 +99,7 @@ export function Three() {
 
     let metalGrain = null
     let grainTexture = null
+    // scene.background = new THREE.Color(0x111827)
 
     const gltfLoader = new GLTFLoader()
     const textureLoader = new THREE.TextureLoader()
@@ -170,6 +181,17 @@ export function Three() {
 
     window.addEventListener('mousemove', updateCursorPos)
 
+    // Misc Models
+    const lightGeom = new THREE.BoxGeometry(1, 1, 1)
+    const lightMat = new THREE.MeshStandardMaterial({
+      emissive: 0xffffff,
+      emissiveIntensity: 2,
+    })
+    const lightMesh = new THREE.Mesh(lightGeom, lightMat)
+    lightMesh.scale.set(0.5, 0.1, 0.6)
+    lightMesh.position.set(0, 0.73, 0)
+    modelGroup.add(lightMesh)
+
 
 
     /**
@@ -177,8 +199,17 @@ export function Three() {
      */
 
     const key = new THREE.DirectionalLight(0xffffff, 2)
-    key.position.set(4, 3, 1)
-    // scene.add(key)
+    key.position.set(2, 0, 1)
+    key.rotation.z = -1.5
+    key.rotation.y = -0.5
+    modelGroup.add(key)
+
+    const pl = new THREE.PointLight(0xffffff, 1)
+    // const plh = new THREE.PointLightHelper(pl)
+    pl.scale.set(0.6, 0.6, 0.6)
+    pl.position.set(0.2, 0.4, 0)
+    modelGroup.add(pl)
+    // scene.add(plh)
 
 
     /**
@@ -189,7 +220,7 @@ export function Three() {
     // Animation
     const animate = () => {
       animationId = requestAnimationFrame(animate)
-      renderer.render(scene, camera)
+      composer.render()
     }
     animationId = requestAnimationFrame(animate)
 
@@ -199,6 +230,7 @@ export function Three() {
       camera.aspect = w / h
       camera.updateProjectionMatrix()
       renderer.setSize(w, h)
+      setComposerSize(w, h)
     }
     window.addEventListener('resize', onResize)
 
@@ -222,6 +254,7 @@ export function Three() {
       grainTexture?.dispose()
       envMap?.dispose()
       scene.environment = null
+      disposeComposer()
       renderer.dispose()
       if (renderer.domElement.parentNode === container) {
         container.removeChild(renderer.domElement)
