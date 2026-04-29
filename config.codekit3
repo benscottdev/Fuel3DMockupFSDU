@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34892",
   "files" : {
+    "\/.env" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.env",
+      "oF" : 0
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -16,6 +24,19 @@
       "oA" : 0,
       "oAP" : "\/.gitignore",
       "oF" : 0
+    },
+    "\/dist\/assets\/FUEL WORD LOGO_WHITE-COrz4U70.png" : {
+      "ft" : 32768,
+      "iS" : 94522,
+      "oA" : 0,
+      "oAP" : "\/dist\/assets\/FUEL WORD LOGO_WHITE-COrz4U70.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/dist\/assets\/GenericFrame-PnbbocJR.glb" : {
       "cB" : 0,
@@ -25,7 +46,18 @@
       "oAP" : "\/dist\/assets\/GenericFrame-PnbbocJR.glb",
       "oF" : 0
     },
-    "\/dist\/assets\/index-B8MOsA3g.css" : {
+    "\/dist\/assets\/index-LYwAXwrt.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dist\/assets\/index-LYwAXwrt-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dist\/assets\/index-SdWnMWB9.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -33,20 +65,9 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dist\/assets\/index-B8MOsA3g-min.css",
+      "oAP" : "\/dist\/assets\/index-SdWnMWB9-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/dist\/assets\/index-C4fMijeA.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dist\/assets\/index-C4fMijeA-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/dist\/assets\/JimBeam_1-CLqnJ6zm.glb" : {
       "cB" : 0,
@@ -88,12 +109,28 @@
       "oAP" : "\/dist\/assets\/JimBeam_5-BjyT8KrW.glb",
       "oF" : 0
     },
+    "\/dist\/assets\/JIMBEAMBOTTLES1-CqjWcEK4.glb" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/assets\/JIMBEAMBOTTLES1-CqjWcEK4.glb",
+      "oF" : 0
+    },
     "\/dist\/assets\/MakersMark-DWdhRAo2.glb" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/assets\/MakersMark-DWdhRAo2.glb",
+      "oF" : 0
+    },
+    "\/dist\/assets\/MakersMarkBottles_3by2-ZSgZbBdt.glb" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/assets\/MakersMarkBottles_3by2-ZSgZbBdt.glb",
       "oF" : 0
     },
     "\/dist\/assets\/Minus196_1-Bt4nA50q.glb" : {
@@ -131,6 +168,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/assets\/Roku_1-DcvxNPTN.glb",
+      "oF" : 0
+    },
+    "\/dist\/assets\/RokuBottles-w6tdXbt6.glb" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/assets\/RokuBottles-w6tdXbt6.glb",
       "oF" : 0
     },
     "\/dist\/favicon.svg" : {
@@ -301,6 +346,50 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/src\/auth\/authContext.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/auth\/authContext-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/auth\/AuthProvider.jsx" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/auth\/AuthProvider-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/auth\/LoginPage.jsx" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/auth\/LoginPage-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/auth\/useAuth.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/auth\/useAuth-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/src\/createSceneComposer.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -308,6 +397,39 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/src\/createSceneComposer-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/lib\/fuelAuth.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/lib\/fuelAuth-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/lib\/fuelBrandLogo.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/lib\/fuelBrandLogo-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/lib\/supabaseClient.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/lib\/supabaseClient-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -333,6 +455,19 @@
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/src\/static\/FUEL WORD LOGO_WHITE.png" : {
+      "ft" : 32768,
+      "iS" : 94522,
+      "oA" : 0,
+      "oAP" : "\/src\/static\/FUEL WORD LOGO_WHITE.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/src\/static\/models\/GenericFrame.glb" : {
       "cB" : 0,
@@ -382,12 +517,20 @@
       "oAP" : "\/src\/static\/models\/JimBeam_5.glb",
       "oF" : 0
     },
-    "\/src\/static\/models\/MakersMark_1.glb" : {
+    "\/src\/static\/models\/JIMBEAMBOTTLES.glb" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/static\/models\/MakersMark_1.glb",
+      "oAP" : "\/src\/static\/models\/JIMBEAMBOTTLES.glb",
+      "oF" : 0
+    },
+    "\/src\/static\/models\/JIMBEAMBOTTLES1.glb" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/static\/models\/JIMBEAMBOTTLES1.glb",
       "oF" : 0
     },
     "\/src\/static\/models\/MakersMark.glb" : {
@@ -396,6 +539,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/static\/models\/MakersMark.glb",
+      "oF" : 0
+    },
+    "\/src\/static\/models\/MakersMarkBottles_3by2.glb" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/static\/models\/MakersMarkBottles_3by2.glb",
       "oF" : 0
     },
     "\/src\/static\/models\/Minus196_1.glb" : {
@@ -420,6 +571,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/static\/models\/Roku_1.glb",
+      "oF" : 0
+    },
+    "\/src\/static\/models\/RokuBottles.glb" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/static\/models\/RokuBottles.glb",
       "oF" : 0
     },
     "\/src\/static\/textures\/noise.jpeg" : {
