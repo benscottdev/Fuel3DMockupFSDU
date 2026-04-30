@@ -6,7 +6,6 @@ import { HDRLoader } from 'three/addons/loaders/HDRLoader.js'
 import { threeModels, bottles as bottleAssets } from './models'
 import { FUEL_WORD_LOGO_WHITE_URL } from './lib/fuelBrandLogo.js'
 import { createSceneComposer } from './createSceneComposer.js'
-import { useAuth } from './auth/useAuth.js'
 
 import genericFrame from './static/models/GenericFrame.glb'
 import grainNoiseUrl from './static/textures/noise.jpeg'
@@ -30,7 +29,6 @@ function normalizeBrandId(brand) {
 }
 
 export function Three() {
-  const { signOut } = useAuth()
   const containerRef = useRef(null)
 
   const [currentModel, setCurrentModel] = useState(Roku_1)
@@ -634,15 +632,6 @@ export function Three() {
           </button>
           <button type="button" onClick={togglePerformanceMode}>
             {performanceMode ? 'Realistic Lighting' : 'Performance Lighting'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setMenuOpen(false)
-              void signOut()
-            }}
-          >
-            Sign out
           </button>
         </div>
       </div>
